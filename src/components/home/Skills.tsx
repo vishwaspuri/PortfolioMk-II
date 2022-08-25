@@ -3,6 +3,7 @@ import React from "react";
 import { Typography, Grid } from "@mui/material";
 import Techstack from "./TechStack";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./home.css"
 import { Box } from "@mui/system";
 
 
@@ -17,11 +18,9 @@ const Skills = () => {
     <Box
       sx={{
         border: 0,
-        display: "block",
-        marginLeft: "26%",
-        borderRadius: "2%"
+        display: "block"
       }}
-      width="50%"
+      className="skillsBox"
     >
       <Grid container>
         <Techstack iconName="devicon-cplusplus-line" />

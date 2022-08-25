@@ -22,8 +22,23 @@
     }
 }
 
-.bwahaha {
-    color: "#fc0388";
+.skillsBox {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+@media (max-width: 400px) {
+    .skillsBox {
+        margin-left: 10%;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 767px) and (min-width: 400px) {
+    .skillsBox {
+        margin-left: 15%;
+        margin-right: auto;
+    }
 }
 
 .tech-icons {

@@ -2,7 +2,7 @@ import React from "react";
 
 import { Typography } from "@mui/material";
 
-import profilePhoto from '../../assets/profilePhoto.png';
+import profilePhoto from '../../assets/profilePhoto.jpeg';
 import './home.css';
 import '../../index.css';
 import '@fontsource/roboto/300.css';

@@ -13,10 +13,10 @@ const ResumeContent = (props: props) => {
   return (
     <div className="resume-item">
       <h5 className={props.title ? "resume-title" : "resume-no-title"} >
-        {props.title}
+        <b>{props.title}</b>
       </h5>
       <p>
-        <em><b>{props.date}</b></em>
+        <em>{props.date}</em>
       </p>
       <ul>
         {props.content.map((value, index) => (

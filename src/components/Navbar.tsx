@@ -18,8 +18,8 @@ const navigate = new Map<string, string>([
   ['Work Ex', '/experience'],
   ['Achievements', '/achievements'],
   ['Projects', '/projects'],
-  ['Resume', 'https://vishwaspuri.tech/static/media/VishwasPuri_Backend.2ce07e2f.pdf'],
-  ['Blog', 'https://blog.vishwaspuri.tech']
+  ['Resume', '/resume.pdf'],
+  // ['Blog', 'https://blog.vishwaspuri.tech']
 ]);
 
 const NavBar = (props: any) => {
@@ -31,7 +31,7 @@ const NavBar = (props: any) => {
 
   const handleCloseNavMenu = (page: string) => {
     setAnchorElNav(null);
-    window.location.href = navigate.get(page)!;
+    window.location.pathname = navigate.get(page)!;
   };
 
   return (
