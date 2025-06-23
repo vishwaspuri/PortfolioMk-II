@@ -12,6 +12,7 @@ const HomePhoto = () => {
         <img 
             src={profilePhoto}
             className="homePhoto center"
+            alt="Vishwas Puri"
         /><br/>
         <Typography variant="h4" display="block" align="center" className="salutation">
             Hi there! <span className="wave">👋🏻</span>

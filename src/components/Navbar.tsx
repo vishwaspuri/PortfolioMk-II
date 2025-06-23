@@ -10,8 +10,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import Logo from '../assets/logo.png';
-import { useLocation } from 'react-router-dom';
-
+import { useNavigate } from 'react-router-dom';
 
 const navigate = new Map<string, string>([
   ['Home', '/'],
@@ -24,6 +23,7 @@ const navigate = new Map<string, string>([
 
 const NavBar = (props: any) => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
+  const navigateTo = useNavigate();
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -31,7 +31,14 @@ const NavBar = (props: any) => {
 
   const handleCloseNavMenu = (page: string) => {
     setAnchorElNav(null);
-    window.location.pathname = navigate.get(page)!;
+    const path = navigate.get(page);
+    if (path) {
+      if (path.startsWith('http') || path.endsWith('.pdf')) {
+        window.open(path, '_blank');
+      } else {
+        navigateTo(path);
+      }
+    }
   };
 
   return (

@@ -4,7 +4,6 @@ import ProjectCard from './ProjectCard';
 
 import covid from "../../assets/projects/covid19-1600x900.png";
 import powertrain from "../../assets/projects/powertrain.jpeg";
-import dim from "../../assets/projects/dim.jpg";
 import socors from "../../assets/projects/socors.jpeg";
 import chatbot from "../../assets/projects/chatbot.png";
 import virTryOn from "../../assets/projects/1.png"

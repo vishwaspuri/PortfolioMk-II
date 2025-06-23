@@ -9,18 +9,18 @@ import Achievements from './components/experience/Achievements';
 import Footer from './components/Footer';
 
 function App() {
-  return <>
-    <NavBar/>
+  return (
     <Router>
+      <NavBar/>
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="experience" element={<Experience/>}></Route>
         <Route path="achievements" element={<Achievements/>}></Route>
         <Route path="projects" element={<Projects/>}></Route>
       </Routes>
+      <Footer/>
     </Router>
-    <Footer/>
-  </>;
+  );
 }
 
 export default App;
