@@ -1,10 +1,10 @@
 import React from "react";
-import Particles from "react-particles";
+import { Particles } from "@tsparticles/react";
 
 const Particle = () => {
   return (
     <Particles
-      params={{
+      options={{
         particles: {
           number: {
             value: 160,

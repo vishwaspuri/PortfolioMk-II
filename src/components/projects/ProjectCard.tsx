@@ -3,7 +3,7 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea, Grid } from '@mui/material';
+import { CardActionArea } from '@mui/material';
 import { Box } from '@mui/system';
 
 interface props {
@@ -15,7 +15,7 @@ interface props {
 
 export default function ProjectCard(props: props) {
     return (
-        <Grid item className='projectCard' padding="10px">
+        <div className='projectCard' style={{ padding: "10px" }}>
             <Card sx={{ maxWidth: 345, height:"100%" }} onClick={() => { window.location.href = props.link }}>
                 <CardActionArea>
                     <CardMedia
@@ -38,6 +38,6 @@ export default function ProjectCard(props: props) {
                     </CardContent>
                 </CardActionArea>
             </Card>
-        </Grid>
+        </div>
     );
 }

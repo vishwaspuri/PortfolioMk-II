@@ -1,4 +1,3 @@
-import { Button, Grid, TableCell, TableRow } from '@mui/material';
 import { Container } from '@mui/system';
 import React from 'react';
 import Particle from '../Particle';
@@ -12,8 +11,8 @@ const Achievements = () => {
         <Container className="resume-section">
             <Particle />
             <Container>
-                <Grid container className="resume">
-                    <Grid item className="resume-left">
+                <div className="resume">
+                    <div className="resume-left">
                         <h3 className="resume-title">Achievements</h3>
                         <ResumeContent
                             title="Amazon HackOn 2021"
@@ -60,8 +59,8 @@ const Achievements = () => {
                             ]}
                             url=""
                         /> 
-                    </Grid>
-                </Grid>
+                    </div>
+                </div>
             </Container>
         </Container>
     );
